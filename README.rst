@@ -8,7 +8,7 @@ Self-service to create ServiceBinding and ServiceInstance for Kubernetes (DevOps
 Docker
 ------
 
-The docker folder provides everything to create an image of a the service.
+The docker folder provides everything to create an image of this service.
 
 selfservice module
 ------------------
