@@ -1,0 +1,387 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>selfservice package &#8212; Self Service 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="selfservice.apis package" href="selfservice.apis.html" />
+    <link rel="prev" title="Welcome to Self Service’s documentation!" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="selfservice.apis.html" title="selfservice.apis package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Self Service’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Self Service 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="selfservice-package">
+<h1>selfservice package<a class="headerlink" href="#selfservice-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-selfservice.apiv1">
+<span id="selfservice-apiv1-module"></span><h2>selfservice.apiv1 module<a class="headerlink" href="#module-selfservice.apiv1" title="Permalink to this headline">¶</a></h2>
+<p>apiv1 module</p>
+<p>Expose selfservice APIs</p>
+<dl class="class">
+<dt id="selfservice.apiv1.SwaggerYaml">
+<em class="property">class </em><code class="descclassname">selfservice.apiv1.</code><code class="descname">SwaggerYaml</code><span class="sig-paren">(</span><em>api=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#selfservice.apiv1.SwaggerYaml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">flask_restplus.resource.Resource</span></code></p>
+<dl class="attribute">
+<dt id="selfservice.apiv1.SwaggerYaml.endpoint">
+<code class="descname">endpoint</code><em class="property"> = 'swagger.yaml_swagger_yaml'</em><a class="headerlink" href="#selfservice.apiv1.SwaggerYaml.endpoint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="selfservice.apiv1.SwaggerYaml.get">
+<code class="descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#selfservice.apiv1.SwaggerYaml.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>swagger.yaml</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="selfservice.apiv1.SwaggerYaml.mediatypes">
+<code class="descname">mediatypes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#selfservice.apiv1.SwaggerYaml.mediatypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="selfservice.apiv1.SwaggerYaml.methods">
+<code class="descname">methods</code><em class="property"> = ['GET']</em><a class="headerlink" href="#selfservice.apiv1.SwaggerYaml.methods" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-selfservice.app">
+<span id="selfservice-app-module"></span><h2>selfservice.app module<a class="headerlink" href="#module-selfservice.app" title="Permalink to this headline">¶</a></h2>
+<p>Application module</p>
+<p>Provide the app Flask object.</p>
+<dl class="class">
+<dt id="selfservice.app.App">
+<em class="property">class </em><code class="descclassname">selfservice.app.</code><code class="descname">App</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#selfservice.app.App" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Core of the application</p>
+<p>Constructor</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>config</strong> (<a class="reference internal" href="#selfservice.config.Config" title="selfservice.config.Config"><em>Config</em></a>) – configuration of the application</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="selfservice.app.App.run">
+<code class="descname">run</code><span class="sig-paren">(</span><em>host='0.0.0.0'</em><span class="sig-paren">)</span><a class="headerlink" href="#selfservice.app.App.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start the application</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><strong>host</strong> (<em>string</em>) – IP to bind</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-selfservice.config">
+<span id="selfservice-config-module"></span><h2>selfservice.config module<a class="headerlink" href="#module-selfservice.config" title="Permalink to this headline">¶</a></h2>
+<p>config module</p>
+<p>Permit to manage global configurations</p>
+<dl class="class">
+<dt id="selfservice.config.Config">
+<em class="property">class </em><code class="descclassname">selfservice.config.</code><code class="descname">Config</code><span class="sig-paren">(</span><em>uri_provisions</em><span class="sig-paren">)</span><a class="headerlink" href="#selfservice.config.Config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Configuration for module and sub-modules</p>
+<p>This class can be overriden and so adapted by every compagnies.</p>
+<p>Constructor</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uri_provisions</strong> (<em>string</em>) – Uri to list provisions requests for the service</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="selfservice.config.Config.get_template_modifiers">
+<code class="descname">get_template_modifiers</code><span class="sig-paren">(</span><em>service</em>, <em>service_details</em>, <em>owner</em>, <em>name</em>, <em>ns</em>, <em>branch</em><span class="sig-paren">)</span><a class="headerlink" href="#selfservice.config.Config.get_template_modifiers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get modifiers to apply on the template</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>service</strong> (<em>string</em>) – Name of the service</li>
+<li><strong>service_details</strong> (<em>dict</em>) – Details about the service setup</li>
+<li><strong>owner</strong> (<em>String</em>) – The owner (eg: CLOUD)</li>
+<li><strong>name</strong> (<em>String</em>) – The repo name (eg: selfservice-init)</li>
+<li><strong>ns</strong> (<em>String</em>) – The namespace (eg: cloudselfservice-init)</li>
+<li><strong>branch</strong> (<em>String</em>) – The branch (eg: master)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">instance modifier, binding modifier</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list, list</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="selfservice.config.Config.get_uri_provisions">
+<code class="descname">get_uri_provisions</code><span class="sig-paren">(</span><em>owner</em>, <em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#selfservice.config.Config.get_uri_provisions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the url of the provisions service</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>owner</strong> (<em>String</em>) – The owner (eg: CLOUD)</li>
+<li><strong>name</strong> (<em>String</em>) – The repo name (eg: selfservice-init)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The provisions service uri</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">String</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="selfservice.config.Config.is_template_exists">
+<code class="descname">is_template_exists</code><span class="sig-paren">(</span><em>template</em><span class="sig-paren">)</span><a class="headerlink" href="#selfservice.config.Config.is_template_exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a template is available</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>template</strong> (<em>String</em>) – Template name</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True if the template exist.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="selfservice.config.Config.load_binding_template">
+<code class="descname">load_binding_template</code><span class="sig-paren">(</span><em>template</em>, <em>modifier</em><span class="sig-paren">)</span><a class="headerlink" href="#selfservice.config.Config.load_binding_template" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load a binding template</p>
+<p>see load_template</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="selfservice.config.Config.load_instance_template">
+<code class="descname">load_instance_template</code><span class="sig-paren">(</span><em>template</em>, <em>modifier</em><span class="sig-paren">)</span><a class="headerlink" href="#selfservice.config.Config.load_instance_template" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load an instance template</p>
+<p>see load_template</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="selfservice.config.Config.load_json">
+<code class="descname">load_json</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#selfservice.config.Config.load_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load JSON file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>json_file</strong> (<em>str</em>) – filename of a json file</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">content of the file</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="selfservice.config.Config.load_template">
+<code class="descname">load_template</code><span class="sig-paren">(</span><em>template</em>, <em>kind</em>, <em>modifier</em><span class="sig-paren">)</span><a class="headerlink" href="#selfservice.config.Config.load_template" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load a template</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>template</strong> (<em>String</em>) – Template name</li>
+<li><strong>kind</strong> (<em>String</em>) – instance or binding</li>
+<li><strong>modifier</strong> (<em>List of String</em>) – Parameters for the template</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The template content or an empty string</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">String</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="selfservice.config.Config.templates">
+<code class="descname">templates</code><em class="property"> = {}</em><a class="headerlink" href="#selfservice.config.Config.templates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-selfservice.kubernetes">
+<span id="selfservice-kubernetes-module"></span><h2>selfservice.kubernetes module<a class="headerlink" href="#module-selfservice.kubernetes" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="selfservice.kubernetes.Kubernetes">
+<em class="property">class </em><code class="descclassname">selfservice.kubernetes.</code><code class="descname">Kubernetes</code><span class="sig-paren">(</span><em>apiserver</em>, <em>token</em>, <em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#selfservice.kubernetes.Kubernetes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Kubernetes managment</p>
+<dl class="method">
+<dt id="selfservice.kubernetes.Kubernetes.deploy_services">
+<code class="descname">deploy_services</code><span class="sig-paren">(</span><em>services</em>, <em>owner</em>, <em>name</em>, <em>ns</em>, <em>branch</em><span class="sig-paren">)</span><a class="headerlink" href="#selfservice.kubernetes.Kubernetes.deploy_services" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deploy services</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>services</strong> (<em>List</em>) – List of services to deploy</li>
+<li><strong>owner</strong> (<em>String</em>) – The owner (eg: CLOUD)</li>
+<li><strong>name</strong> (<em>String</em>) – The repo name (eg: selfservice-init)</li>
+<li><strong>ns</strong> (<em>String</em>) – The namespace (eg: cloudselfservice-init)</li>
+<li><strong>branch</strong> (<em>String</em>) – The branch (eg: master)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">bool, Dict. The result and details</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="selfservice.kubernetes.Kubernetes.timeout">
+<code class="descname">timeout</code><em class="property"> = 2</em><a class="headerlink" href="#selfservice.kubernetes.Kubernetes.timeout" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-selfservice.settings">
+<span id="selfservice-settings-module"></span><h2>selfservice.settings module<a class="headerlink" href="#module-selfservice.settings" title="Permalink to this headline">¶</a></h2>
+<p>Settings module</p>
+<p>This is a special module that permit to share some common variables between all other modules
+that need it. Specially those for flask-restplus</p>
+<dl class="function">
+<dt id="selfservice.settings.init">
+<code class="descclassname">selfservice.settings.</code><code class="descname">init</code><span class="sig-paren">(</span><em>_config</em><span class="sig-paren">)</span><a class="headerlink" href="#selfservice.settings.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Settings Init</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>_config</strong> (<a class="reference internal" href="#selfservice.config.Config" title="selfservice.config.Config"><em>Config</em></a>) – Configuration ot the build counter</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-selfservice">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-selfservice" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to Self Service’s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="selfservice.apis.html"
+                        title="next chapter">selfservice.apis package</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="selfservice.apis.html" title="selfservice.apis package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Self Service’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Self Service 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Yellow Pages Inc.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.0.
+    </div>
+  </body>
+</html>
