@@ -1,0 +1,4 @@
+flask
+flask-restplus
+requests
+pyyaml

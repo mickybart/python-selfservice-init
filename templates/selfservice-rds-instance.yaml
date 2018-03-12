@@ -1,0 +1,11 @@
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ServiceInstance
+metadata:
+  name: selfservice-rds-instance
+  namespace: %s
+spec:
+  clusterServiceClassExternalName: rds
+  clusterServicePlanExternalName: mariadb
+  parameters:
+    cluster: %s
+    db: %s

@@ -1,0 +1,11 @@
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ServiceInstance
+metadata:
+  name: selfservice-atlas-instance
+  namespace: %s
+spec:
+  clusterServiceClassExternalName: atlas-mongodb-cluster
+  clusterServicePlanExternalName: atlas-mongodb-existing-cluster
+  parameters:
+    cluster: %s
+    ns: %s
